@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário de cadastro</title>
+     <meta charset="utf-8">
+	<style>
+      body{
+          font-family: Calibri,Arial,sans-serif;
+          background-color:#F5ED47;
+      } fieldset {
+          background-color: rgb(255, 255, 255);
+          border: none;
+          border-radius: 10px;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          background-size: 15%;
+          background-repeat: no-repeat;
+          background-position: top right;
+      } #usuario {
+          background-image: url(hannah.png);
+      } .formfale {
+          width: 50%;
+          margin: auto;
+      } input, select {
+          padding: 8px;
+          border: none;
+          border-bottom: 1px solid silver;
+      } h1 {
+          font-size: 17px;
+          text-align: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+      } h2 {
+          font-size: 50px;
+          text-align: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+     } button {
+          background-color: #8547F5;
+          color: black;
+          border: black;
+          border-radius: 5px;
+          width: 100%;
+          padding: 20px;
+      } </style>
+</head>
+<body>
+     <h2>Cadastra-se</h2>
+
+     <form class="formafale">
+     <fieldset id="usuario">
+     <h1>Preencha o formulário abaixo:</h1>
+     
+     <p><label for="email">E-mail:</label>
+     <br><input id="email" type="email"></p>
+     
+     <p><label for="pass">Senha:</label>
+     <br><input id="pass" type="password" size="15" maxlength="12" placeholder="12 caracteres"></p>
+
+     <p><label for="pass">Repita a Senha:</label>
+     <br><input id="pass" type="password" size="15" maxlength="12" placeholder="12 caracteres"></p>
+
+     <p><label for="name">Nome completo:</label>
+     <br><input id="name" type="text" size="30" maxlength="35" placeholder="Nome completo"></p>
+
+     <p><label for="cpf">CPF:</label>
+     <br><input id="cpf" type="text" size="30" maxlength="11" placeholder="digite somente números"></p>
+
+     <p><label for="date">Data de nascimento:</label>
+     <br><input id="date" type="date"></p>
+
+     <p><label for="sexo">Sexo:</label>
+     <br><br><input id="sexo" type="radio" name="sexo" value="masc"> Masculino
+     <input id="sexo" type="radio" name="sexo" value="fem"> Feminino
+     </p>
+
+     <p><label for="num">Telefone:</label>
+     <br><input type="text" name="telefone" size="30" maxlength="12" placeholder="digite somente números"></p>
+
+     <p><input type="checkbox" name="Whatsapp" value="1">Receber notificações por Whatsapp.</p>
+     <p><input type="checkbox" name="ofertas" value="2">Desejo receber ofertas por e-mail.</p>
+
+     <button>Criar seu cadastro</button>
+ </fieldset>
+</form>
+</body>
+</html>
